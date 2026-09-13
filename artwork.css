@@ -1,0 +1,22 @@
+/* Generated atlas art replaces the original bitmap sprites. */
+#world svg.painted-art{overflow:hidden}
+.porcelain{display:block;position:relative;width:100%;height:100%}
+.porcelain>.painted-art{animation:porcelain-flutter calc(.65s / var(--speed)) ease-in-out infinite alternate;transform-origin:center}
+.rider{position:absolute;left:34%;top:17%;width:32%;height:47%;transform:rotate(-8deg)}
+.module-item .porcelain{width:21px;height:21px;flex-shrink:0}
+#moduleIcon{width:35px;height:35px;flex-shrink:0}
+#moduleIcon .porcelain{width:35px;height:35px}
+@keyframes porcelain-flutter{to{transform:scale(.97,1.04) rotate(2deg)}}
+#world.upstream-toilets .toaster{width:94px;height:94px}
+#world.upstream-toilets .toast{width:42px;height:42px}
+#world.upstream-swamp .fish>.painted-art{transform:scaleX(-1);animation:fish-flex calc(1.5s / var(--speed)) ease-in-out infinite alternate}
+@keyframes fish-flex{to{transform:scaleX(-.96) rotate(3deg)}}
+#world.upstream-swamp .bubbles{width:30px;height:42px;border:2px solid #86dcb65c;border-radius:50%;box-shadow:23px 20px 0 -9px #83dccc7a,-15px 30px 0 -11px #83dccc7a}
+#world .eye{width:155px;height:155px;top:65px}
+#world .eye.left-eye{left:100px}#world .eye.right-eye{right:100px}
+#world .nose{width:125px;height:135px;left:258px;top:192px}
+#world .mouth{width:240px;height:185px;left:200px;top:282px}
+.lizard svg{animation:colors 13s linear infinite}
+#world .silhouette svg{filter:brightness(0)}
+.scene-note a{white-space:nowrap}
+.credits{max-width:900px;margin:0 auto 24px;padding:0 20px;text-align:center;font-size:11px;line-height:1.8;color:#ddd8eb}.credits a{color:#fff}

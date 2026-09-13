@@ -1,0 +1,333 @@
+/* Adapted from bryanbraun/after-dark-css (MIT). See THIRD-PARTY-NOTICES.md. */
+#world.upstream-toilets .toaster{
+      position: absolute;
+      width: 64px;
+      height: 64px;
+
+    }
+#world.upstream-toilets .toast{
+      position: absolute;
+      width: 64px;
+      height: 64px;
+
+    }
+#world.upstream-toilets .t1{
+
+
+
+
+              animation: ad-fly calc(10s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t2{
+
+
+
+
+              animation: ad-fly calc(16s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t3{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t4{
+
+
+
+
+              animation: ad-fly calc(10s / var(--speed)) calc(5s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t5{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(4s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t6{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(8s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t7{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(12s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t8{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(16s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .t9{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(20s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .tst1{
+
+
+
+
+              animation: ad-fly calc(10s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .tst2{
+
+
+
+
+              animation: ad-fly calc(16s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .tst3{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .tst4{
+
+
+
+
+              animation: ad-fly calc(24s / var(--speed)) calc(12s / var(--speed)) linear infinite;
+    }
+#world.upstream-toilets .p6{ right: -2%; top: -17%; }
+#world.upstream-toilets .p7{ right: 10%; top: -19%; }
+#world.upstream-toilets .p8{ right: 20%; top: -18%; }
+#world.upstream-toilets .p9{ right: 30%; top: -20%; }
+#world.upstream-toilets .p10{ right: 40%; top: -21%; }
+#world.upstream-toilets .p11{ right: 50%; top: -18%; }
+#world.upstream-toilets .p12{ right: 60%; top: -20%; }
+#world.upstream-toilets .p13{ right: -17%; top: 10%; }
+#world.upstream-toilets .p14{ right: -19%; top: 20%; }
+#world.upstream-toilets .p15{ right: -21%; top: 30%; }
+#world.upstream-toilets .p16{ right: -23%; top: 50%; }
+#world.upstream-toilets .p17{ right: -25%; top: 70%; }
+#world.upstream-toilets .p18{ right: 0%; top: -26%; }
+#world.upstream-toilets .p19{ right: 10%; top: -20%; }
+#world.upstream-toilets .p20{ right: 20%; top: -36%; }
+#world.upstream-toilets .p21{ right: 30%; top: -24%; }
+#world.upstream-toilets .p22{ right: 40%; top: -33%; }
+#world.upstream-toilets .p23{ right: 60%; top: -40%; }
+#world.upstream-toilets .p24{ right: -26%; top: 10%; }
+#world.upstream-toilets .p25{ right: -36%; top: 30%; }
+#world.upstream-toilets .p26{ right: -29%; top: 50%; }
+#world.upstream-toilets .p27{ right: 0; top: -46%; }
+#world.upstream-toilets .p28{ right: 10%; top: -56%; }
+#world.upstream-toilets .p29{ right: 20%; top: -49%; }
+#world.upstream-toilets .p30{ right: 30%; top: -60%; }
+#world.upstream-toilets .p31{ right: -46%; top: 10%; }
+#world.upstream-toilets .p32{ right: -56%; top: 20%; }
+#world.upstream-toilets .p33{ right: -49%; top: 30%; }
+@keyframes ad-fly{
+      from {
+
+
+
+
+        transform: translate(0, 0);
+      }
+      to {
+
+
+
+
+        transform: translate(-1600px, 1600px);
+      }
+    }
+#world.upstream-swamp .bubbles{
+      position: absolute;
+      bottom: -60px;
+      display: block;
+      width: 50px;
+      height: 56px;
+      background-repeat: no-repeat;
+
+
+
+
+      animation: ad-rise calc(13s / var(--speed)) linear infinite, ad-reappear calc(39s / var(--speed)) steps(3) linear infinite;
+    }
+#world.upstream-swamp .fish{
+      position: absolute;
+      width: 145px;
+      height: 145px;
+
+      left: -50%;
+      top: -50%;
+    }
+#world.upstream-swamp .butterfly{
+
+    }
+#world.upstream-swamp .guppy{
+
+    }
+#world.upstream-swamp .seahorse{
+
+    }
+#world.upstream-swamp .jelly{
+
+    }
+#world.upstream-swamp .minnow{
+
+    }
+#world.upstream-swamp .red{
+
+    }
+#world.upstream-swamp .striped{
+
+    }
+#world.upstream-swamp .angel{
+
+    }
+#world.upstream-swamp .flounder{
+
+    }
+#world.upstream-swamp .ltr{
+
+
+
+
+      animation: ad-ltr calc(26s / var(--speed)) linear infinite;
+     }
+#world.upstream-swamp .ltr-delay1{
+
+
+
+
+      animation: ad-ltr calc(26s / var(--speed)) calc(4s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .ltr-delay2{
+
+
+
+
+      animation: ad-ltr calc(26s / var(--speed)) calc(8s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .ltr-fast{
+
+
+
+
+      animation: ad-ltr calc(17s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .rtl{
+
+
+
+
+      animation: ad-rtl calc(26s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .rtl-delay1{
+
+
+
+
+      animation: ad-rtl calc(26s / var(--speed)) calc(4s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .rtl-delay2{
+
+
+
+
+      animation: ad-rtl calc(26s / var(--speed)) calc(7s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .rtl-fast{
+
+
+
+
+      animation: ad-rtl calc(17s / var(--speed)) linear infinite;
+    }
+#world.upstream-swamp .row1{ top: 0%; }
+#world.upstream-swamp .row2{ top: 9% }
+#world.upstream-swamp .row3{ top: 18%; }
+#world.upstream-swamp .row4{ top: 27%; }
+#world.upstream-swamp .row5{ top: 36%; }
+#world.upstream-swamp .row6{ top: 45%; }
+#world.upstream-swamp .row7{ top: 54%; }
+#world.upstream-swamp .row8{ top: 63%; }
+#world.upstream-swamp .row9{ top: 72%; }
+@keyframes ad-ltr{
+      0% { left: -30%; }
+      50% { left: 110%; }
+      51% {
+
+
+
+
+        transform: rotateY(0);
+      }
+      52% {
+
+
+
+
+        transform: rotateY(180deg);
+      }
+      100% {
+
+
+
+
+        transform: rotateY(180deg);
+        left: -30%;
+      }
+    }
+@keyframes ad-rtl{
+      0% {
+
+
+
+
+        transform: rotateY(180deg);
+        left: 110%;
+      }
+      50% { left: -30%; }
+      51% {
+
+
+
+
+        transform: rotateY(180deg);
+      }
+      52% {
+
+
+
+
+        transform: rotateY(0);
+      }
+      100% { left: 110%; }
+    }
+@keyframes ad-rise{
+      from {
+
+
+
+
+        transform: translate(0, 0);
+      }
+      to {
+
+
+
+
+        transform: translate(0, -1800px);
+      }
+    }
+@keyframes ad-reappear{
+      from { left: 20%; }
+      to   { left: 80%; }
+    }

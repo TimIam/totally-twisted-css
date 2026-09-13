@@ -1,2 +1,7 @@
-# Improve default language scanning
-*.html linguist-language=CSS
+* text=auto
+*.png binary
+*.js text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf

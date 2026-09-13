@@ -1,1 +1,6 @@
-designs
+node_modules/
+.vercel/
+.env*
+*.log
+test-results/
+deployment-*.json

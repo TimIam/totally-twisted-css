@@ -1,30 +1,48 @@
-# After Dark in CSS
+# Totally Twisted CSS
 
-![Flying Toasters in CSS](img/flying-toasters-css.jpg)
+An interactive retro screensaver collection with generated cartoon artwork, built from a clone of [Bryan Braun's After Dark in CSS](https://github.com/bryanbraun/after-dark-css).
 
-Do you longingly reminisce about the days when flying toasters graced your screen? Do words like "Confetti Factory" and "Daredevil Dan" make your heart skip a beat?
+**Live:** https://phenology.technology/totallytwisted/
 
-If so, then never fear—CSS is here! Using modern CSS techniques like animations and transforms, we can imitate several of your favorite After Dark™ screensavers.
+13 scenes inspired by Totally Twisted, plus Mandelbrot, Julia, Fractal Forest, and Fractal Kaleidoscope. Select a scene, adjust its options, and press **Start Screen Saver**. Space pauses, N advances, F enters playback, and Escape exits. On touch devices, tap to reveal Exit. Sound is optional and synthesized locally.
 
-The animations were made with CSS alone. No animated gifs or JavaScript.
+## Run
 
-**[See them here!](http://bryanbraun.github.io/after-dark-css/)**
+Requires Node.js for the optional local server; the app has no runtime packages.
 
-## Why?
+```sh
+node server.cjs
+```
 
-Just for fun.
+Open http://127.0.0.1:4173/totallytwisted/. You can also open index.html directly. For iPhone and iPad use the hosted page in Safari. This is a browser screensaver experience, not an installed macOS screensaver or an iOS lock screen replacement. Apple hardware has not yet been tested directly.
 
-## License?
+## What comes from the cloned repository
 
-* The HTML & CSS is licensed with [The MIT License](https://opensource.org/licenses/MIT).
-* The [ChicagoFLF font](https://usemodify.com/fonts/chicago/) is licensed with [The SIL Open Font License](https://scripts.sil.org/ofl).
-* Images are copyright [Berkeley Systems](https://en.wikipedia.org/wiki/Berkeley_Systems).
+The git history retains the upstream repository through commit `20630dba51d49101dba0b52205400d31be9c0c37`. Flying Toilets adapts `all/flying-toasters.html`; Toxic Swamp adapts `all/fish.html`. Their launch positions, timing classes, flight paths, swimming routes, and turnarounds are reused. The two original source documents are preserved under `upstream/`.
 
-Full reuse is probably ok, but use at your own risk! [For more details, see this comment](https://github.com/bryanbraun/after-dark-css/issues/3#issuecomment-127814083).
+`node scripts/adapt-upstream.cjs` generates `upstream.css`. The adapter scopes the original CSS to the preview, removes obsolete vendor prefixes and references to the old bitmap artwork, and replaces old sprite-frame stepping with motion for the generated artwork. `artwork.css` applies the new sprites and styling.
 
-## Thanks to:
+The upstream repository does **not** implement the Totally Twisted expansion. The other eleven scenes and four mathematical fractals are new additions. They are simplified interpretations, not exact reproductions of the original program, dialogue, sound, or rare events. All thirteen named scenes are selectable, but their behavior differs from the original.
 
-[Jonathon Sampson](https://twitter.com/jonathansampson), [Keith Clark](http://codepen.io/keithclark/), [Rob Glazebrook](http://www.cssnewbie.com/pure-css-bouncing-ball), [Ryan Justice](http://ned.highline.edu/~ryan-j/200/final/) and others for posting tutorials & demos on CSS animations.
-[N. Landsteiner](http://www.masswerk.at/flyer/), [David Donarumo](http://www.youtube.com/watch?v=M1w1SQ3ezh8), and [Lazy Game Reviews](http://www.youtube.com/watch?v=ANnYbX54oU4) for online preservation of what the original screensavers looked like.
-Robin Casady for the Public Domain [ChicagoFLF](http://christtrekker.users.sourceforge.net/fnt/chicago.shtml) font.
-The original screensavers and artwork are © 1989 Berkeley Systems Inc.
+## Artwork and rendering
+
+`assets/twisted-sprites.png` is a generated transparent 4 × 4 atlas of sixteen original illustrations. See `ART-PROMPT.md` for the prompt and generation method. The active app does not load the upstream Berkeley Systems bitmap artwork. CSS drives sprite animation; small amounts of JavaScript manage settings, audio, and interaction. True fractals use Canvas and JavaScript math.
+
+## Files
+
+- `index.html`, `app.js`, `styles.css`: control panel and added scenes.
+- `upstream.css`: generated animation code adapted from upstream.
+- `artwork.css`, `assets/`: replacement artwork.
+- `upstream/`, `THIRD-PARTY-NOTICES.md`: source provenance and credits.
+- `tests/browser-check.js`: browser checks for scenes, settings, pause, fullscreen, and fractals.
+
+## Verification
+
+Start the local server, then use `agent-browser`:
+
+```powershell
+npx agent-browser open http://127.0.0.1:4173/totallytwisted
+Get-Content tests/browser-check.js -Raw | npx agent-browser eval --stdin
+```
+
+Code is MIT licensed. Third-party notices and artwork details are recorded separately. After Dark and Totally Twisted are names of the original software; this project is independent.
